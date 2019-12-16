@@ -22,33 +22,48 @@ extension Double {
 
 struct ContentView : View {
     @EnvironmentObject private var poller: Poller
+    @State private var ip_address: String = ""
     
     var body: some View {
         ZStack {
             ARViewContainer().edgesIgnoringSafeArea(.all).environmentObject(self.poller)
             VStack {
                 ZStack {
-                    Text("Left Click")
-                        .font(.largeTitle)
-                        .foregroundColor(Color.white)
-                    Rectangle().foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 0.5)).gesture(
-                        DragGesture(minimumDistance: 0, coordinateSpace: .global).onChanged{ value in
-                            self.poller.is_drag = true
-                        }.onEnded{ _ in
-                            self.poller.is_drag = false
-                        }
-                    )
-                }
-
-                Button(action: {
-                    self.poller.is_print = true
-                }) {
-                    ZStack {
-                        Rectangle().foregroundColor(Color(red: 0.0, green: 0.0, blue: 1.0, opacity: 0.5))
-                        Text("Print")
-                            .font(.largeTitle)
-                            .foregroundColor(Color.white)
+                    if !self.poller.is_connected {
+                        Rectangle().foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0))
+                    } else {
+                        Rectangle().foregroundColor(Color(red: 0.0, green: 1.0, blue: 0.0, opacity: 1.0))
                     }
+                    
+                    HStack {
+                        TextField("Enter ip address", text: $ip_address)
+                        Spacer()
+                        Button(action: {
+                            //self.poller.ip_adress = self.ip_address
+                            //self.poller.set_ip_address(ip_adress: self.ip_address)
+                            self.poller.connect(host: self.ip_address)
+                            
+                            let keyWindow = UIApplication.shared.connectedScenes
+                                    .filter({$0.activationState == .foregroundActive})
+                                    .map({$0 as? UIWindowScene})
+                                    .compactMap({$0})
+                                    .first?.windows
+                                    .filter({$0.isKeyWindow}).first
+                            keyWindow?.endEditing(true)
+                            
+                        }) {
+                            Text("Set IP").foregroundColor(.white)
+                        }
+                    }.padding()
+                }
+                
+                HStack {
+                    VIOTouchButton(key: ERASER_KEY, background: Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 0.5));
+                    VIOTouchButton(key: CLICK_KEY, background: Color(red: 1.0, green: 1.0, blue: 0.0, opacity: 0.5));
+                }
+                HStack {
+                    VIOButton(key: PRINT_KEY, background: Color(red: 0.0, green: 1.0, blue: 1.0, opacity: 0.5));
+                    VIOButton(key: MERGE_KEY, background: Color(red: 1.0, green: 0.0, blue: 1.0, opacity: 0.5));
                 }
             }
         }
