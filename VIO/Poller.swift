@@ -15,12 +15,24 @@ import ARKit
 let DEFAULT_PORT: UInt16 = 32900
 let DEFAULT_PORT_32: Int32 = 32900
 //let DEFAULT_HOST: String = "192.168.43.128"
-let DEFAULT_HOST: String = "127.0.0.1"
+let DEFAULT_HOST: String = "192.168.43.128"
 
 let CLICK_KEY = "click"
 let PRINT_KEY = "print"
 let MERGE_KEY = "merge"
 let ERASER_KEY = "eraser"
+let UP_KEY = "up"
+let DOWN_KEY   = "down"
+
+extension Date {
+    var millisecondsSince1970:Int64 {
+        return Int64((self.timeIntervalSince1970 * 1000.0).rounded())
+    }
+
+    init(milliseconds:Int64) {
+        self = Date(timeIntervalSince1970: TimeInterval(milliseconds) / 1000)
+    }
+}
 
 final class Poller: ObservableObject {
     
@@ -37,7 +49,7 @@ final class Poller: ObservableObject {
     var fps = 0
     var last_update_time: Double = 0
     
-    @Published var is_connected: Bool = false
+    @Published var is_connected: Bool = true
     
     var ip_adress: String = DEFAULT_HOST
     var requested_ip: String = DEFAULT_HOST
@@ -53,7 +65,12 @@ final class Poller: ObservableObject {
             CLICK_KEY: false,
             MERGE_KEY: false,
             ERASER_KEY: false,
+            UP_KEY: false,
+            DOWN_KEY: false,
         ]
+        self.connection = NWConnection(host: NWEndpoint.Host(DEFAULT_HOST), port: NWEndpoint.Port(integerLiteral: DEFAULT_PORT), using: .udp)
+        self.connection?.start(queue: .global())
+        self.is_connected = true
     }
     
     public func setARView(arview: ARView) {
@@ -78,8 +95,11 @@ final class Poller: ObservableObject {
                 let printed: String = self.status[PRINT_KEY]! ? "1" : "0"
                 let merge: String = self.status[MERGE_KEY]! ? "1" : "0"
                 let eraser: String = self.status[ERASER_KEY]! ? "1" : "0"
+                let up: String = self.status[UP_KEY]! ? "1" : "0"
+                let down: String = self.status[DOWN_KEY]! ? "1" : "0"
                 
                 let results = [
+                    String(Date().timeIntervalSince1970*1000),
                     String(doubled_x),
                     String(doubled_y),
                     String(doubled_z),
@@ -87,9 +107,11 @@ final class Poller: ObservableObject {
                     clicked,
                     merge,
                     printed,
+                    up,
+                    down,
                 ]
+                //print(results.joined(separator: ","))
                 if self.is_connected {
-                    print(results.joined(separator: ","))
                     self.connection!.send(content: results.joined(separator: ",").data(using: String.Encoding.utf8), completion: NWConnection.SendCompletion.contentProcessed(({ (NWError) in
                     })))
                 }
@@ -101,6 +123,14 @@ final class Poller: ObservableObject {
                 
                 if self.status[MERGE_KEY]! {
                     self.status[MERGE_KEY] = false
+                }
+                
+                if self.status[UP_KEY]! {
+                    self.status[UP_KEY] = false
+                }
+                
+                if self.status[DOWN_KEY]! {
+                    self.status[DOWN_KEY] = false
                 }
 
                 self.fps += 1

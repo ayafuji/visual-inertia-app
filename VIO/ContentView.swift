@@ -13,13 +13,6 @@ import CoreMotion
 import Network
 
 
-extension Double {
-    func roundToDecimal(_ fractionDigits: Int) -> Double {
-        let multiplier = pow(10, Double(fractionDigits))
-        return Darwin.round(self * multiplier) / multiplier
-    }
-}
-
 struct ContentView : View {
     @EnvironmentObject private var poller: Poller
     @State private var ip_address: String = ""
@@ -55,16 +48,20 @@ struct ContentView : View {
                             Text("Set IP").foregroundColor(.white)
                         }
                     }.padding()
-                }
+                }.frame(height: 50)
                 
                 HStack {
                     VIOTouchButton(key: ERASER_KEY, background: Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 0.5));
                     VIOTouchButton(key: CLICK_KEY, background: Color(red: 1.0, green: 1.0, blue: 0.0, opacity: 0.5));
                 }
                 HStack {
-                    VIOButton(key: PRINT_KEY, background: Color(red: 0.0, green: 1.0, blue: 1.0, opacity: 0.5));
+                    //VIOButton(key: PRINT_KEY, background: Color(red: 0.0, green: 1.0, blue: 1.0, opacity: 0.5));
                     VIOButton(key: MERGE_KEY, background: Color(red: 1.0, green: 0.0, blue: 1.0, opacity: 0.5));
                 }
+                HStack {
+                    VIOButton(key: UP_KEY, background: Color(red: 0.0, green: 0.0, blue: 0.0, opacity: 0.5));
+                    VIOButton(key: DOWN_KEY, background: Color(red: 0.5, green: 0.5, blue: 1.5, opacity: 0.5));
+                }.frame(height:80)
             }
         }
     }
