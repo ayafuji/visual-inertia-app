@@ -24,6 +24,10 @@ let ERASER_KEY = "eraser"
 let UP_KEY = "up"
 let DOWN_KEY   = "down"
 
+let COLOR_ALERT = Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 0.8)
+let COLOR_WARN = Color(red: 0.0, green: 1.0, blue: 1.0, opacity: 0.8)
+let COLOR_CLEAR = Color(red: 0.0, green: 1.0, blue: 0.0, opacity: 0.8)
+
 extension Double {
     func roundToDecimal(_ fractionDigits: Int) -> Double {
         let multiplier = pow(10, Double(fractionDigits))
@@ -31,7 +35,9 @@ extension Double {
     }
 }
 
-final class Poller: ObservableObject {
+final class Poller: NSObject, ObservableObject, ARSessionDelegate {
+    
+    //var description: String
     var connection: NWConnection?
     var arView: ARView = ARView(frame: .zero)
     var transform: CMAcceleration = CMAcceleration()
@@ -40,10 +46,14 @@ final class Poller: ObservableObject {
     var ip_adress: String = DEFAULT_HOST
     var requested_ip: String = DEFAULT_HOST
     var status: Dictionary = [String: Bool]()
+    var isTracked = false;
     
     @Published var is_connected: Bool = true
+    @Published var tracking_state_str: String = "";
+    @Published var tracking_state_color: Color = Color(red: 0.0, green: 1.0, blue: 0.0, opacity: 0.5)
     
-    init() {
+    override init() {
+        super.init()
         self.last_update_time = getUnixTime()
         self.status = [
             PRINT_KEY: false,
@@ -60,6 +70,7 @@ final class Poller: ObservableObject {
     
     public func setARView(arview: ARView) {
         self.arView = arview
+        self.arView.session.delegate = self
     }
 
     public func Poll() {
@@ -95,7 +106,7 @@ final class Poller: ObservableObject {
                     up,
                     down,
                 ]
-                if self.is_connected {
+                if self.is_connected && self.isTracked {
                     self.connection!.send(content: results.joined(separator: ",").data(using: String.Encoding.utf8), completion: NWConnection.SendCompletion.contentProcessed(({ (NWError) in
                     })))
                 }
@@ -129,6 +140,51 @@ final class Poller: ObservableObject {
                 usleep(UInt32(1000.0 / 30) * ms)
             }
         }
+    }
+    
+    //ARKitのデバイス位置の追跡品質の更新時に呼ばれる
+    func session(_ session: ARSession, cameraDidChangeTrackingState camera: ARCamera) {
+        
+        isTracked = false;
+        switch camera.trackingState {
+        case .notAvailable:
+            tracking_state_str = "トラッキング不可"
+            self.tracking_state_color = COLOR_ALERT
+        case .normal:
+            tracking_state_str = "トラッキング可"
+            self.tracking_state_color = COLOR_CLEAR
+            isTracked = true;
+        case .limited(.initializing):
+            tracking_state_str = "カメラ映像とモーションのデータが不十分でトラッキングできない"
+            self.tracking_state_color = COLOR_ALERT
+        case .limited(.relocalizing):
+            tracking_state_str = "トラッキング中断後に再開しようとしている"
+            self.tracking_state_color = COLOR_WARN
+        case .limited(.excessiveMotion):
+            tracking_state_str = "モーションが速すぎてトラッキングできない"
+            self.tracking_state_color = COLOR_ALERT
+        case .limited(.insufficientFeatures):
+            tracking_state_str = "カメラ映像に識別可能なものがなくトラッキングできない"
+            self.tracking_state_color = COLOR_ALERT
+        }
+        NSLog(self.tracking_state_str)
+    }
+    
+    //ARセッションの一時停止時に呼ばれる
+    func sessionWasInterrupted(_ session: ARSession) {
+        NSLog("トラッキングの一時停止")
+        self.tracking_state_color = COLOR_ALERT
+    }
+    
+    //ARセッションの再開時に呼ばれる
+    func sessionInterruptionEnded(_ session: ARSession) {
+        NSLog("トラッキングの再開")
+        self.tracking_state_color = COLOR_WARN
+    }
+
+    //エラーによるARセッションの停止時に呼ばれる
+    func session(_ session: ARSession, didFailWithError error: Error) {
+        //label.text = "エラーによるトラッキングの停止"
     }
     
     func connect(host: String) {

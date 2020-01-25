@@ -50,6 +50,13 @@ struct ContentView : View {
                     }.padding()
                 }.frame(height: 50)
                 
+                ZStack {
+                    Rectangle().foregroundColor(self.poller.tracking_state_color)
+                    Text(self.poller.tracking_state_str)
+                        .font(Font.custom("SFProText-Bold", size: 30))
+                        .foregroundColor(Color.white)
+                    
+                }.frame(height: 100)
                 HStack {
                     VIOTouchButton(key: ERASER_KEY, background: Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 0.5));
                     VIOTouchButton(key: CLICK_KEY, background: Color(red: 1.0, green: 1.0, blue: 0.0, opacity: 0.5));
