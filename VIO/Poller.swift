@@ -24,41 +24,26 @@ let ERASER_KEY = "eraser"
 let UP_KEY = "up"
 let DOWN_KEY   = "down"
 
-extension Date {
-    var millisecondsSince1970:Int64 {
-        return Int64((self.timeIntervalSince1970 * 1000.0).rounded())
-    }
-
-    init(milliseconds:Int64) {
-        self = Date(timeIntervalSince1970: TimeInterval(milliseconds) / 1000)
+extension Double {
+    func roundToDecimal(_ fractionDigits: Int) -> Double {
+        let multiplier = pow(10, Double(fractionDigits))
+        return Darwin.round(self * multiplier) / multiplier
     }
 }
 
 final class Poller: ObservableObject {
-    
     var connection: NWConnection?
     var arView: ARView = ARView(frame: .zero)
-    
-    //var udpClient = UDPClient(address: DEFAULT_HOST, port: DEFAULT_PORT_32)
-    //let queue = DispatchQueue(label: "com.unifa-e.ChatClient")
-    
     var transform: CMAcceleration = CMAcceleration()
-    //var is_drag: Bool = false
-    //var is_print: Bool = false
-    
     var fps = 0
     var last_update_time: Double = 0
+    var ip_adress: String = DEFAULT_HOST
+    var requested_ip: String = DEFAULT_HOST
+    var status: Dictionary = [String: Bool]()
     
     @Published var is_connected: Bool = true
     
-    var ip_adress: String = DEFAULT_HOST
-    var requested_ip: String = DEFAULT_HOST
-    
-    var status: Dictionary = [String: Bool]()
-    
     init() {
-//        self.connection = NWConnection(host: NWEndpoint.Host(self.ip_adress), port: NWEndpoint.Port(integerLiteral: DEFAULT_PORT), using: .udp)
-//        self.connection.start(queue: queue)
         self.last_update_time = getUnixTime()
         self.status = [
             PRINT_KEY: false,
@@ -110,7 +95,6 @@ final class Poller: ObservableObject {
                     up,
                     down,
                 ]
-                //print(results.joined(separator: ","))
                 if self.is_connected {
                     self.connection!.send(content: results.joined(separator: ",").data(using: String.Encoding.utf8), completion: NWConnection.SendCompletion.contentProcessed(({ (NWError) in
                     })))
@@ -151,16 +135,6 @@ final class Poller: ObservableObject {
         self.connection = NWConnection(host: NWEndpoint.Host(host), port: NWEndpoint.Port(integerLiteral: DEFAULT_PORT), using: .udp)
         self.connection?.start(queue: .global())
         self.is_connected = true
-//        self.connection?.send(content: "hello".data(using: String.Encoding.utf8), completion: NWConnection.SendCompletion.contentProcessed(({ (NWError) in
-//        })))
-//        self.connection?.receiveMessage { (data, context, isComplete, error) in
-//            if (isComplete) {
-//                print(error.debugDescription)
-//                self.is_connected = true
-//            } else {
-//                print("failed to get message from the server")
-//            }
-//        }
     }
     
     func getUnixTime() -> Double {
