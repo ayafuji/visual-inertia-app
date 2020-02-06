@@ -20,7 +20,15 @@ struct ContentView : View {
     var body: some View {
         ZStack {
             ARViewContainer().edgesIgnoringSafeArea(.all).environmentObject(self.poller)
+
             VStack {
+//                ZStack {
+//                    Rectangle().foregroundColor(Color.black)
+//                    Text(self.poller.time)
+//                        .font(Font.custom("SFProText-Bold", size: 24))
+//                        .foregroundColor(Color.white)
+//                }.frame(height: 30)
+                
                 ZStack {
                     if !self.poller.is_connected {
                         Rectangle().foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0))
@@ -29,7 +37,7 @@ struct ContentView : View {
                     }
                     
                     HStack {
-                        TextField("Enter ip address", text: $ip_address)
+                        TextField(DEFAULT_HOST, text: $ip_address)
                         Spacer()
                         Button(action: {
                             //self.poller.ip_adress = self.ip_address
@@ -53,7 +61,7 @@ struct ContentView : View {
                 ZStack {
                     Rectangle().foregroundColor(self.poller.tracking_state_color)
                     Text(self.poller.tracking_state_str)
-                        .font(Font.custom("SFProText-Bold", size: 30))
+                        .font(Font.custom("SFProText-Bold", size: 24))
                         .foregroundColor(Color.white)
                     
                 }.frame(height: 100)

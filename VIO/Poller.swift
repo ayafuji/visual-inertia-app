@@ -51,6 +51,7 @@ final class Poller: NSObject, ObservableObject, ARSessionDelegate {
     @Published var is_connected: Bool = true
     @Published var tracking_state_str: String = "";
     @Published var tracking_state_color: Color = Color(red: 0.0, green: 1.0, blue: 0.0, opacity: 0.5)
+    @Published var time: String = "00:00"
     
     override init() {
         super.init()
@@ -64,20 +65,59 @@ final class Poller: NSObject, ObservableObject, ARSessionDelegate {
             DOWN_KEY: false,
         ]
         self.connection = NWConnection(host: NWEndpoint.Host(DEFAULT_HOST), port: NWEndpoint.Port(integerLiteral: DEFAULT_PORT), using: .udp)
-        self.connection?.start(queue: .global())
-        self.is_connected = true
+        self.connection?.stateUpdateHandler = { state in
+            switch state {
+            case .ready:
+                NSLog("ready")
+                self.is_connected = true
+            case .waiting(let error):
+                NSLog("waiting error: %@", error.debugDescription)
+                self.is_connected = false
+            case .failed(let error):
+                NSLog("failed error: %@", error.debugDescription)
+                self.is_connected = false
+            case .setup:
+                NSLog("setup")
+            case .cancelled:
+                NSLog("cancelled")
+            case .preparing:
+                NSLog("preparing")
+            }
+        }
+        self.connection?.start(queue: .main)
+        
+        UpdateTime()
     }
     
     public func setARView(arview: ARView) {
         self.arView = arview
         self.arView.session.delegate = self
     }
+    
+    public func UpdateTime() {
+        DispatchQueue.global().async {
+
+            while true {
+                let date = Date()
+                let calendar = Calendar.current
+                let year = calendar.component(.year, from: date)
+                let month = calendar.component(.month, from: date)
+                let day = calendar.component(.day, from: date)
+                let hour = calendar.component(.hour, from: date)
+                let minute = calendar.component(.minute, from: date)
+                let second = calendar.component(.second, from: date)
+                self.time = String(hour) + ":" + String(minute) + ":" + String(second);
+
+                usleep(UInt32(1000.0) * 1000)
+            }
+        }
+    }
 
     public func Poll() {
         NSLog("start poll")
         
         let ms: UInt32 = 1000
-        let queue = DispatchQueue(label: "com.hogehoge.fuga", qos: .background)
+        let queue = DispatchQueue(label: "com.vio.poll", qos: .background)
         queue.async {
             while true {
                 if self.ip_adress != self.requested_ip {
@@ -189,8 +229,26 @@ final class Poller: NSObject, ObservableObject, ARSessionDelegate {
     
     func connect(host: String) {
         self.connection = NWConnection(host: NWEndpoint.Host(host), port: NWEndpoint.Port(integerLiteral: DEFAULT_PORT), using: .udp)
-        self.connection?.start(queue: .global())
-        self.is_connected = true
+        self.connection?.stateUpdateHandler = { state in
+            switch state {
+            case .ready:
+                NSLog("ready")
+                self.is_connected = true
+            case .waiting(let error):
+                NSLog("waiting error: %@", error.debugDescription)
+                self.is_connected = false
+            case .failed(let error):
+                NSLog("failed error: %@", error.debugDescription)
+                self.is_connected = false
+            case .setup:
+                NSLog("setup")
+            case .cancelled:
+                NSLog("cancelled")
+            case .preparing:
+                NSLog("preparing")
+            }
+        }
+        self.connection?.start(queue: .main)
     }
     
     func getUnixTime() -> Double {
