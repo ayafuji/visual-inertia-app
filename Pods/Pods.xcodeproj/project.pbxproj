@@ -3,46 +3,24 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D6854010074039A4F317422E25E22D7 /* Pods-VIO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 567116321507717D8C30D2B186D2210D /* Pods-VIO-dummy.m */; };
-		10FF98D32189D045D89683CE1D2CE9FC /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		1E8189CE0F88D6765326615034586C3A /* Pods-VIOTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = FC8C2B82B11180A028217CE302A9B367 /* Pods-VIOTests-dummy.m */; };
-		26933DE790AD32659A054D491A443F2F /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = 5B0E02ECCD65A8BB2208F3B2BA41A40F /* yudpsocket.c */; };
-		310F4A419C7777D411976A91A8977522 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E143F9F9E11CD6BF689A5CC25376C2E /* Result.swift */; };
-		343BEBE2D05A5A45606CE42CDFE68C49 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		44D9C79121CD4F30E55D8FA315CCA543 /* Pods-VIO-VIOUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B962888FBC0F96C99BD2F32B4A59604 /* Pods-VIO-VIOUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		590F90702C1E8FFBDE2750F2EB559F6B /* SwiftSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6EE744DA4CD44470453A32BAD6BCFEE2 /* SwiftSocket-dummy.m */; };
-		5BB907C502A7DEFA00C3F7ECA55CAE2B /* SwiftSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C98A82A34056375FA04A23EE99A0DE3A /* SwiftSocket-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		70F0A141B9FCAAF090E256BE623DE51B /* Pods-VIOTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A861AD5E7625CB189E87D69248B436EE /* Pods-VIOTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		71719E654327DF3FE268F5B592C6221C /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = D34E558791B9D0DA7BADEDE6FCC773AD /* ytcpsocket.c */; };
-		86CABF16414D74E81AF00E487F59B6E7 /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 447E59343DC1B431D5A15BA9F074BDDC /* UDPClient.swift */; };
-		8CE757DF68C6C3E3988A788BFD3633CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		990B82857ACF07574A0E89A6AEE681C0 /* Pods-VIO-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DCF1A50BD320ABFCD1DD1B0CE45F5B9C /* Pods-VIO-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		9F9C4D89B9E4648A85BA2AD7E2C4911F /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 09B68F60448A68271A55A5BE51FB9546 /* TCPClient.swift */; };
-		A0601673E64E46816B7364700E8A330A /* Pods-VIO-VIOUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E93F27936D093AB884972EDB9E15BE4 /* Pods-VIO-VIOUITests-dummy.m */; };
-		D1127D9E8326A5799E950FB8646EB310 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
-		D303472E6599B444367CC153A4F2DFDC /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = 609ADF7E8B98D570BE046E4C5DBDFD65 /* Socket.swift */; };
+		17B389E1D14FFDCD7E4BCE150654169A /* yudpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = FD687AF3F1DF224DF954C245A64F5319 /* yudpsocket.c */; };
+		6A8E01A023498AF64D5F5E28E644A492 /* Pods-VIO-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A0F231B58DE114F88C5DD42F6E72CAE /* Pods-VIO-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		93EB7F1460A61D1FFC23840D954979E9 /* Result.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4825A869ADA41C51432AE9527FE0B73 /* Result.swift */; };
+		9E6C036157EC358D77CC29101A2DB40C /* UDPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0C574D6D4A19015DA31C2C3CF3B530E /* UDPClient.swift */; };
+		A3BDFD1E4967FDEEDED7C09C713443A8 /* SwiftSocket-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6B8F1517EAE77E94D70FB0696FB4622 /* SwiftSocket-umbrella.h */; settings = {ATTRIBUTES = (Project, ); }; };
+		B0823A7B41A27849E0205C24F1184739 /* Socket.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33078E6A403943CBED3F5EB665F921A /* Socket.swift */; };
+		BE612CF06F5899AF0E7E5D588651A397 /* TCPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85389A2B14313F7A1914784EEAAE78C5 /* TCPClient.swift */; };
+		E34C0A86B013EBD0A07315E057978FE6 /* ytcpsocket.c in Sources */ = {isa = PBXBuildFile; fileRef = BB7D867D5D8C2F0513D39092AC1BA23D /* ytcpsocket.c */; };
+		EA0290A4F52C8316520D1C4EB2CF7BB0 /* SwiftSocket-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A8F364C2BE06A9928AD83766FD643AC /* SwiftSocket-dummy.m */; };
+		F9109117848E4253F76BD2E082F24429 /* Pods-VIO-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 91ACA03D81EA2B04C2E8D9C885497ADA /* Pods-VIO-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5CF78EB8A59819B6A4CFA60A6B735899 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 2098E99F31975F5C89523CC6EB58B9CC;
-			remoteInfo = SwiftSocket;
-		};
-		927CD063BEB8CE4E9D994C7E31A6512D /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = E8A0DFB7FF2E748421B0DA4271A2E000;
-			remoteInfo = "Pods-VIO";
-		};
-		F1759635AD080E029D46F583017E53EC /* PBXContainerItemProxy */ = {
+		B2B073701E83D122BBAC29CD97213286 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -52,218 +30,128 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		009A55B4061A788B6D03B54F1A9CF50B /* Pods-VIOTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VIOTests-Info.plist"; sourceTree = "<group>"; };
-		017BDB4A10BFF301C96618226FD4F0FA /* Pods_VIO.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIO.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		072C63B37791061D1757E3108BF6249D /* Pods-VIO-VIOUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VIO-VIOUITests.release.xcconfig"; sourceTree = "<group>"; };
-		09B68F60448A68271A55A5BE51FB9546 /* TCPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = Sources/TCPClient.swift; sourceTree = "<group>"; };
-		1BFEB7C7EED50B60F2D44CB362D5543E /* Pods_VIOTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIOTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2E758C1DE1CCEE0E6401EEFAA11C3DF8 /* Pods-VIOTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VIOTests-acknowledgements.plist"; sourceTree = "<group>"; };
-		2F41A179D9CD927AAF2B4BD6E22AAB7C /* Pods-VIO-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VIO-frameworks.sh"; sourceTree = "<group>"; };
-		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		341C16EA345EE0D1415FE6F7A444D4AF /* Pods-VIO-VIOUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-VIO-VIOUITests-frameworks.sh"; sourceTree = "<group>"; };
-		383B70CD1875BEC3A64BF7C7C377377A /* SwiftSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSocket.xcconfig; sourceTree = "<group>"; };
-		3A59C9FE3D98CF2152E03CFA05A85BFC /* SwiftSocket.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftSocket.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		3B91B0F7D78C1997EDFA524CA363C435 /* Pods-VIO.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VIO.modulemap"; sourceTree = "<group>"; };
-		447E59343DC1B431D5A15BA9F074BDDC /* UDPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = Sources/UDPClient.swift; sourceTree = "<group>"; };
-		567116321507717D8C30D2B186D2210D /* Pods-VIO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VIO-dummy.m"; sourceTree = "<group>"; };
-		5A87BC6D9663DB9ADE0BCF4820E7D6A5 /* Pods-VIOTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VIOTests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		5B0E02ECCD65A8BB2208F3B2BA41A40F /* yudpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = yudpsocket.c; path = Sources/yudpsocket.c; sourceTree = "<group>"; };
-		5B7CAD7B63B0A78D605C74CA295FBADB /* Pods-VIO-VIOUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VIO-VIOUITests-acknowledgements.plist"; sourceTree = "<group>"; };
-		609ADF7E8B98D570BE046E4C5DBDFD65 /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
-		6E93F27936D093AB884972EDB9E15BE4 /* Pods-VIO-VIOUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VIO-VIOUITests-dummy.m"; sourceTree = "<group>"; };
-		6EE744DA4CD44470453A32BAD6BCFEE2 /* SwiftSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSocket-dummy.m"; sourceTree = "<group>"; };
-		78C03FF9C1787A8AD2555E0B185F5EB5 /* Pods-VIO-VIOUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VIO-VIOUITests-Info.plist"; sourceTree = "<group>"; };
-		7C87D1E8CB66A4657933847D199100C4 /* Pods-VIO-VIOUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VIO-VIOUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		8B962888FBC0F96C99BD2F32B4A59604 /* Pods-VIO-VIOUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VIO-VIOUITests-umbrella.h"; sourceTree = "<group>"; };
-		8E143F9F9E11CD6BF689A5CC25376C2E /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = "<group>"; };
-		91A60F9C37A7695CD34C13363EFB628C /* Pods_VIO_VIOUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VIO_VIOUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		9204AB33BB04A8067F0B9D2467CE7624 /* SwiftSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-prefix.pch"; sourceTree = "<group>"; };
+		017BDB4A10BFF301C96618226FD4F0FA /* libPods-VIO.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-VIO.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6F1077B56C6F50DDB0244770973A9C /* Pods-VIO-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VIO-acknowledgements.markdown"; sourceTree = "<group>"; };
+		3A59C9FE3D98CF2152E03CFA05A85BFC /* libSwiftSocket.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSwiftSocket.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8F364C2BE06A9928AD83766FD643AC /* SwiftSocket-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftSocket-dummy.m"; sourceTree = "<group>"; };
+		536ED9F75C274A07AAB9645927A61C6E /* Pods-VIO-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VIO-acknowledgements.plist"; sourceTree = "<group>"; };
+		5B1609F4B5F4A70A686A80F76B1DF09C /* Pods-VIO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VIO.release.xcconfig"; sourceTree = "<group>"; };
+		5F9C409D36418C1532FF5E0F206E46A2 /* Pods-VIO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VIO.debug.xcconfig"; sourceTree = "<group>"; };
+		7220A7EFBEA04710848A9C5B379DDF21 /* Pods-VIO.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VIO.modulemap"; sourceTree = "<group>"; };
+		85389A2B14313F7A1914784EEAAE78C5 /* TCPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = TCPClient.swift; path = Sources/TCPClient.swift; sourceTree = "<group>"; };
+		91ACA03D81EA2B04C2E8D9C885497ADA /* Pods-VIO-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VIO-dummy.m"; sourceTree = "<group>"; };
+		9A0F231B58DE114F88C5DD42F6E72CAE /* Pods-VIO-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VIO-umbrella.h"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9E0B2A9889749A75D9641514D7C15D97 /* Pods-VIO.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VIO.release.xcconfig"; sourceTree = "<group>"; };
-		A018FBA943E10C156E29BF426667651C /* Pods-VIO-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VIO-Info.plist"; sourceTree = "<group>"; };
-		A05A4A2850AD0FDEA18003AC6005E62D /* SwiftSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSocket.modulemap; sourceTree = "<group>"; };
-		A861AD5E7625CB189E87D69248B436EE /* Pods-VIOTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VIOTests-umbrella.h"; sourceTree = "<group>"; };
-		AE520BE27AD546D0AA1034640185F7F7 /* Pods-VIOTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VIOTests.debug.xcconfig"; sourceTree = "<group>"; };
-		C2E09C2D88A1C84E8F3E816F8BB5D9C9 /* Pods-VIO-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-VIO-acknowledgements.markdown"; sourceTree = "<group>"; };
-		C98A82A34056375FA04A23EE99A0DE3A /* SwiftSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-umbrella.h"; sourceTree = "<group>"; };
-		CBA4FC1A31E9F710B841E94FFE04959F /* SwiftSocket-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SwiftSocket-Info.plist"; sourceTree = "<group>"; };
-		CBC39396AD26F75DFB061BD59A326308 /* Pods-VIOTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VIOTests.release.xcconfig"; sourceTree = "<group>"; };
-		D34E558791B9D0DA7BADEDE6FCC773AD /* ytcpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ytcpsocket.c; path = Sources/ytcpsocket.c; sourceTree = "<group>"; };
-		DCF1A50BD320ABFCD1DD1B0CE45F5B9C /* Pods-VIO-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-VIO-umbrella.h"; sourceTree = "<group>"; };
-		EE4856B0F70ACFD07D4DB04B2C51BBEE /* Pods-VIO-VIOUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VIO-VIOUITests.modulemap"; sourceTree = "<group>"; };
-		EFF3D69A8BE2B76E97877C54D2242DE6 /* Pods-VIO.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VIO.debug.xcconfig"; sourceTree = "<group>"; };
-		F16CB8DD513BDBAB13AB29C0192678F9 /* Pods-VIO-VIOUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-VIO-VIOUITests.debug.xcconfig"; sourceTree = "<group>"; };
-		F626DE6375265763B3561905C0893285 /* Pods-VIO-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-VIO-acknowledgements.plist"; sourceTree = "<group>"; };
-		F8EDF0CE980CA738A848957C23E067CF /* Pods-VIOTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-VIOTests.modulemap"; sourceTree = "<group>"; };
-		FC8C2B82B11180A028217CE302A9B367 /* Pods-VIOTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-VIOTests-dummy.m"; sourceTree = "<group>"; };
+		9DBC7917B55A98027A1DF8133FB5C809 /* SwiftSocket.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftSocket.xcconfig; sourceTree = "<group>"; };
+		BB7D867D5D8C2F0513D39092AC1BA23D /* ytcpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = ytcpsocket.c; path = Sources/ytcpsocket.c; sourceTree = "<group>"; };
+		C0C574D6D4A19015DA31C2C3CF3B530E /* UDPClient.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UDPClient.swift; path = Sources/UDPClient.swift; sourceTree = "<group>"; };
+		C33078E6A403943CBED3F5EB665F921A /* Socket.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Socket.swift; path = Sources/Socket.swift; sourceTree = "<group>"; };
+		CDF110748B865F75ABA067F6D1E6B703 /* SwiftSocket-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-prefix.pch"; sourceTree = "<group>"; };
+		E4825A869ADA41C51432AE9527FE0B73 /* Result.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Result.swift; path = Sources/Result.swift; sourceTree = "<group>"; };
+		E64B70E51ECEE70AE00A981F20DB5F39 /* SwiftSocket.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SwiftSocket.modulemap; sourceTree = "<group>"; };
+		F6B8F1517EAE77E94D70FB0696FB4622 /* SwiftSocket-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftSocket-umbrella.h"; sourceTree = "<group>"; };
+		FD687AF3F1DF224DF954C245A64F5319 /* yudpsocket.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = yudpsocket.c; path = Sources/yudpsocket.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		012BEFFAD8DCD8DE61DC792921417B92 /* Frameworks */ = {
+		06E5D1BD1D2F2F72910E736CB03908B5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8CE757DF68C6C3E3988A788BFD3633CE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		6207A291FB7F97FEED7FB837CB541ABA /* Frameworks */ = {
+		A9CFB3C2D134E256664B1F937F2FC920 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				10FF98D32189D045D89683CE1D2CE9FC /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		89EB738270B1EBD21DA7B9876F84CB8F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D1127D9E8326A5799E950FB8646EB310 /* Foundation.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		CE533F8684283BCE9E38786ADA65F1B6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				343BEBE2D05A5A45606CE42CDFE68C49 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		382F66A13BBCBBA5312D5201148A12CE /* Pods-VIO-VIOUITests */ = {
+		0BABC494DB06784A8A8A28F2013AAE1A /* Pods-VIO */ = {
 			isa = PBXGroup;
 			children = (
-				EE4856B0F70ACFD07D4DB04B2C51BBEE /* Pods-VIO-VIOUITests.modulemap */,
-				7C87D1E8CB66A4657933847D199100C4 /* Pods-VIO-VIOUITests-acknowledgements.markdown */,
-				5B7CAD7B63B0A78D605C74CA295FBADB /* Pods-VIO-VIOUITests-acknowledgements.plist */,
-				6E93F27936D093AB884972EDB9E15BE4 /* Pods-VIO-VIOUITests-dummy.m */,
-				341C16EA345EE0D1415FE6F7A444D4AF /* Pods-VIO-VIOUITests-frameworks.sh */,
-				78C03FF9C1787A8AD2555E0B185F5EB5 /* Pods-VIO-VIOUITests-Info.plist */,
-				8B962888FBC0F96C99BD2F32B4A59604 /* Pods-VIO-VIOUITests-umbrella.h */,
-				F16CB8DD513BDBAB13AB29C0192678F9 /* Pods-VIO-VIOUITests.debug.xcconfig */,
-				072C63B37791061D1757E3108BF6249D /* Pods-VIO-VIOUITests.release.xcconfig */,
-			);
-			name = "Pods-VIO-VIOUITests";
-			path = "Target Support Files/Pods-VIO-VIOUITests";
-			sourceTree = "<group>";
-		};
-		3A54462B94F6EC6C944053BFC4E3C649 /* Pods-VIO */ = {
-			isa = PBXGroup;
-			children = (
-				3B91B0F7D78C1997EDFA524CA363C435 /* Pods-VIO.modulemap */,
-				C2E09C2D88A1C84E8F3E816F8BB5D9C9 /* Pods-VIO-acknowledgements.markdown */,
-				F626DE6375265763B3561905C0893285 /* Pods-VIO-acknowledgements.plist */,
-				567116321507717D8C30D2B186D2210D /* Pods-VIO-dummy.m */,
-				2F41A179D9CD927AAF2B4BD6E22AAB7C /* Pods-VIO-frameworks.sh */,
-				A018FBA943E10C156E29BF426667651C /* Pods-VIO-Info.plist */,
-				DCF1A50BD320ABFCD1DD1B0CE45F5B9C /* Pods-VIO-umbrella.h */,
-				EFF3D69A8BE2B76E97877C54D2242DE6 /* Pods-VIO.debug.xcconfig */,
-				9E0B2A9889749A75D9641514D7C15D97 /* Pods-VIO.release.xcconfig */,
+				7220A7EFBEA04710848A9C5B379DDF21 /* Pods-VIO.modulemap */,
+				1D6F1077B56C6F50DDB0244770973A9C /* Pods-VIO-acknowledgements.markdown */,
+				536ED9F75C274A07AAB9645927A61C6E /* Pods-VIO-acknowledgements.plist */,
+				91ACA03D81EA2B04C2E8D9C885497ADA /* Pods-VIO-dummy.m */,
+				9A0F231B58DE114F88C5DD42F6E72CAE /* Pods-VIO-umbrella.h */,
+				5F9C409D36418C1532FF5E0F206E46A2 /* Pods-VIO.debug.xcconfig */,
+				5B1609F4B5F4A70A686A80F76B1DF09C /* Pods-VIO.release.xcconfig */,
 			);
 			name = "Pods-VIO";
 			path = "Target Support Files/Pods-VIO";
 			sourceTree = "<group>";
 		};
-		5D635881E93A5F52E36A225DD33F9C41 /* Support Files */ = {
+		6EFA5F388903355F4054B312936ACC34 /* SwiftSocket */ = {
 			isa = PBXGroup;
 			children = (
-				A05A4A2850AD0FDEA18003AC6005E62D /* SwiftSocket.modulemap */,
-				383B70CD1875BEC3A64BF7C7C377377A /* SwiftSocket.xcconfig */,
-				6EE744DA4CD44470453A32BAD6BCFEE2 /* SwiftSocket-dummy.m */,
-				CBA4FC1A31E9F710B841E94FFE04959F /* SwiftSocket-Info.plist */,
-				9204AB33BB04A8067F0B9D2467CE7624 /* SwiftSocket-prefix.pch */,
-				C98A82A34056375FA04A23EE99A0DE3A /* SwiftSocket-umbrella.h */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/SwiftSocket";
-			sourceTree = "<group>";
-		};
-		8371826779DFDAEE74205F1E35A7C108 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				017BDB4A10BFF301C96618226FD4F0FA /* Pods_VIO.framework */,
-				91A60F9C37A7695CD34C13363EFB628C /* Pods_VIO_VIOUITests.framework */,
-				1BFEB7C7EED50B60F2D44CB362D5543E /* Pods_VIOTests.framework */,
-				3A59C9FE3D98CF2152E03CFA05A85BFC /* SwiftSocket.framework */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		B1DB9ECD821D1BEBEE42F1189E8B914D /* SwiftSocket */ = {
-			isa = PBXGroup;
-			children = (
-				8E143F9F9E11CD6BF689A5CC25376C2E /* Result.swift */,
-				609ADF7E8B98D570BE046E4C5DBDFD65 /* Socket.swift */,
-				09B68F60448A68271A55A5BE51FB9546 /* TCPClient.swift */,
-				447E59343DC1B431D5A15BA9F074BDDC /* UDPClient.swift */,
-				D34E558791B9D0DA7BADEDE6FCC773AD /* ytcpsocket.c */,
-				5B0E02ECCD65A8BB2208F3B2BA41A40F /* yudpsocket.c */,
-				5D635881E93A5F52E36A225DD33F9C41 /* Support Files */,
+				E4825A869ADA41C51432AE9527FE0B73 /* Result.swift */,
+				C33078E6A403943CBED3F5EB665F921A /* Socket.swift */,
+				85389A2B14313F7A1914784EEAAE78C5 /* TCPClient.swift */,
+				C0C574D6D4A19015DA31C2C3CF3B530E /* UDPClient.swift */,
+				BB7D867D5D8C2F0513D39092AC1BA23D /* ytcpsocket.c */,
+				FD687AF3F1DF224DF954C245A64F5319 /* yudpsocket.c */,
+				DBF2B17271D83E527E73F5F7CC6FB02C /* Support Files */,
 			);
 			path = SwiftSocket;
 			sourceTree = "<group>";
 		};
-		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+		9AF66CB85E8B457C22A93476FEEA1787 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+				017BDB4A10BFF301C96618226FD4F0FA /* libPods-VIO.a */,
+				3A59C9FE3D98CF2152E03CFA05A85BFC /* libSwiftSocket.a */,
 			);
-			name = iOS;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
 				D5EC352109CA1F9CC0CB3BCA4B89FE57 /* Pods */,
-				8371826779DFDAEE74205F1E35A7C108 /* Products */,
-				F73B519B148C3A36A826990FC06041E3 /* Targets Support Files */,
+				9AF66CB85E8B457C22A93476FEEA1787 /* Products */,
+				DE77C7F9F779956041C46794BE15DE5F /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
-			);
-			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		D5EC352109CA1F9CC0CB3BCA4B89FE57 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				B1DB9ECD821D1BEBEE42F1189E8B914D /* SwiftSocket */,
+				6EFA5F388903355F4054B312936ACC34 /* SwiftSocket */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
-		DFE31B36187CD317BEED9CBE55CBD6CA /* Pods-VIOTests */ = {
+		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F8EDF0CE980CA738A848957C23E067CF /* Pods-VIOTests.modulemap */,
-				5A87BC6D9663DB9ADE0BCF4820E7D6A5 /* Pods-VIOTests-acknowledgements.markdown */,
-				2E758C1DE1CCEE0E6401EEFAA11C3DF8 /* Pods-VIOTests-acknowledgements.plist */,
-				FC8C2B82B11180A028217CE302A9B367 /* Pods-VIOTests-dummy.m */,
-				009A55B4061A788B6D03B54F1A9CF50B /* Pods-VIOTests-Info.plist */,
-				A861AD5E7625CB189E87D69248B436EE /* Pods-VIOTests-umbrella.h */,
-				AE520BE27AD546D0AA1034640185F7F7 /* Pods-VIOTests.debug.xcconfig */,
-				CBC39396AD26F75DFB061BD59A326308 /* Pods-VIOTests.release.xcconfig */,
 			);
-			name = "Pods-VIOTests";
-			path = "Target Support Files/Pods-VIOTests";
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		F73B519B148C3A36A826990FC06041E3 /* Targets Support Files */ = {
+		DBF2B17271D83E527E73F5F7CC6FB02C /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				3A54462B94F6EC6C944053BFC4E3C649 /* Pods-VIO */,
-				382F66A13BBCBBA5312D5201148A12CE /* Pods-VIO-VIOUITests */,
-				DFE31B36187CD317BEED9CBE55CBD6CA /* Pods-VIOTests */,
+				E64B70E51ECEE70AE00A981F20DB5F39 /* SwiftSocket.modulemap */,
+				9DBC7917B55A98027A1DF8133FB5C809 /* SwiftSocket.xcconfig */,
+				4A8F364C2BE06A9928AD83766FD643AC /* SwiftSocket-dummy.m */,
+				CDF110748B865F75ABA067F6D1E6B703 /* SwiftSocket-prefix.pch */,
+				F6B8F1517EAE77E94D70FB0696FB4622 /* SwiftSocket-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftSocket";
+			sourceTree = "<group>";
+		};
+		DE77C7F9F779956041C46794BE15DE5F /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0BABC494DB06784A8A8A28F2013AAE1A /* Pods-VIO */,
 			);
 			name = "Targets Support Files";
 			sourceTree = "<group>";
@@ -271,35 +159,19 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		4A86755A8C90BC68D24C9E901D9991EB /* Headers */ = {
+		34D60749C36A6FB2232AA3D3EEB3E95E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				990B82857ACF07574A0E89A6AEE681C0 /* Pods-VIO-umbrella.h in Headers */,
+				6A8E01A023498AF64D5F5E28E644A492 /* Pods-VIO-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		4FE5EDFC78AFBF44CAF456A8850BA4A0 /* Headers */ = {
+		B486281F5C1196A513FBFFAB07D2F3CD /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70F0A141B9FCAAF090E256BE623DE51B /* Pods-VIOTests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		79F43F9B1682C54CD6AD12A466EDA670 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				44D9C79121CD4F30E55D8FA315CCA543 /* Pods-VIO-VIOUITests-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DC3106B504678C60365EA746F2704214 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5BB907C502A7DEFA00C3F7ECA55CAE2B /* SwiftSocket-umbrella.h in Headers */,
+				A3BDFD1E4967FDEEDED7C09C713443A8 /* SwiftSocket-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,12 +180,12 @@
 /* Begin PBXNativeTarget section */
 		2098E99F31975F5C89523CC6EB58B9CC /* SwiftSocket */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 227044261F7ABB997524D6854C4DA01A /* Build configuration list for PBXNativeTarget "SwiftSocket" */;
+			buildConfigurationList = 75D62BE3B0DB0ABDB76141EA800DCB75 /* Build configuration list for PBXNativeTarget "SwiftSocket" */;
 			buildPhases = (
-				DC3106B504678C60365EA746F2704214 /* Headers */,
-				13487976253A0F787DA56797114477E5 /* Sources */,
-				6207A291FB7F97FEED7FB837CB541ABA /* Frameworks */,
-				99652FCBC8D3FDD8F6EA0DC26B0734B5 /* Resources */,
+				B486281F5C1196A513FBFFAB07D2F3CD /* Headers */,
+				77F2C36939F2629B13E653FB4F131B54 /* Sources */,
+				A9CFB3C2D134E256664B1F937F2FC920 /* Frameworks */,
+				113062332CB2F2A002E4DEBA14250F28 /* Copy generated compatibility header */,
 			);
 			buildRules = (
 			);
@@ -321,65 +193,26 @@
 			);
 			name = SwiftSocket;
 			productName = SwiftSocket;
-			productReference = 3A59C9FE3D98CF2152E03CFA05A85BFC /* SwiftSocket.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		925FCB2E9A03DBAB96644CC26C4AE395 /* Pods-VIO-VIOUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = B6C7524E9410D090F8240F66D3B9CD3F /* Build configuration list for PBXNativeTarget "Pods-VIO-VIOUITests" */;
-			buildPhases = (
-				79F43F9B1682C54CD6AD12A466EDA670 /* Headers */,
-				20BAD8AB15FADDEA2C0E37F08D3F129D /* Sources */,
-				CE533F8684283BCE9E38786ADA65F1B6 /* Frameworks */,
-				30A4EE98B9C3771B2DA9527213843A40 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				DB2FDBA769BFDC625CE88890D9ECC8F3 /* PBXTargetDependency */,
-			);
-			name = "Pods-VIO-VIOUITests";
-			productName = "Pods-VIO-VIOUITests";
-			productReference = 91A60F9C37A7695CD34C13363EFB628C /* Pods_VIO_VIOUITests.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		AA77DE11ED2029ECA63C8B07BD6304AA /* Pods-VIOTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = DB96F47D5CC9181B1AEE6F95111B4277 /* Build configuration list for PBXNativeTarget "Pods-VIOTests" */;
-			buildPhases = (
-				4FE5EDFC78AFBF44CAF456A8850BA4A0 /* Headers */,
-				6580CAA19B37C860FD0E456E2EAFFF8C /* Sources */,
-				89EB738270B1EBD21DA7B9876F84CB8F /* Frameworks */,
-				DD32C9FB2B323B4D765E41EC0FDDE952 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				23D713489423D9B3FE6DF6F74DBBFDD1 /* PBXTargetDependency */,
-			);
-			name = "Pods-VIOTests";
-			productName = "Pods-VIOTests";
-			productReference = 1BFEB7C7EED50B60F2D44CB362D5543E /* Pods_VIOTests.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 3A59C9FE3D98CF2152E03CFA05A85BFC /* libSwiftSocket.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 		E8A0DFB7FF2E748421B0DA4271A2E000 /* Pods-VIO */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A65CEEE4C46D5FEB6CCCE72A6D863351 /* Build configuration list for PBXNativeTarget "Pods-VIO" */;
+			buildConfigurationList = ED0952365CBCFEC16A6812D89CE96425 /* Build configuration list for PBXNativeTarget "Pods-VIO" */;
 			buildPhases = (
-				4A86755A8C90BC68D24C9E901D9991EB /* Headers */,
-				FD231539764D85650C62896C5B49A723 /* Sources */,
-				012BEFFAD8DCD8DE61DC792921417B92 /* Frameworks */,
-				63DFAEB7BFAECEEAE721C8A0678D8629 /* Resources */,
+				34D60749C36A6FB2232AA3D3EEB3E95E /* Headers */,
+				D0FA1E19905D907A22DD45FEA0F51564 /* Sources */,
+				06E5D1BD1D2F2F72910E736CB03908B5 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				5E8F2EF7573148FD3CDBF0355CE04609 /* PBXTargetDependency */,
+				2ABD486F53F933023F3CA648D62CFDDE /* PBXTargetDependency */,
 			);
 			name = "Pods-VIO";
 			productName = "Pods-VIO";
-			productReference = 017BDB4A10BFF301C96618226FD4F0FA /* Pods_VIO.framework */;
-			productType = "com.apple.product-type.framework";
+			productReference = 017BDB4A10BFF301C96618226FD4F0FA /* libPods-VIO.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -391,7 +224,7 @@
 				LastUpgradeCheck = 1100;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -399,224 +232,100 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 8371826779DFDAEE74205F1E35A7C108 /* Products */;
+			productRefGroup = 9AF66CB85E8B457C22A93476FEEA1787 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				E8A0DFB7FF2E748421B0DA4271A2E000 /* Pods-VIO */,
-				925FCB2E9A03DBAB96644CC26C4AE395 /* Pods-VIO-VIOUITests */,
-				AA77DE11ED2029ECA63C8B07BD6304AA /* Pods-VIOTests */,
 				2098E99F31975F5C89523CC6EB58B9CC /* SwiftSocket */,
 			);
 		};
 /* End PBXProject section */
 
-/* Begin PBXResourcesBuildPhase section */
-		30A4EE98B9C3771B2DA9527213843A40 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
+/* Begin PBXShellScriptBuildPhase section */
+		113062332CB2F2A002E4DEBA14250F28 /* Copy generated compatibility header */ = {
+			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		63DFAEB7BFAECEEAE721C8A0678D8629 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h",
+				"${PODS_ROOT}/Headers/Public/SwiftSocket/SwiftSocket.modulemap",
+				"${PODS_ROOT}/Headers/Public/SwiftSocket/SwiftSocket-umbrella.h",
+			);
+			name = "Copy generated compatibility header";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap",
+				"${BUILT_PRODUCTS_DIR}/SwiftSocket-umbrella.h",
+				"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "COMPATIBILITY_HEADER_PATH=\"${BUILT_PRODUCTS_DIR}/Swift Compatibility Header/${PRODUCT_MODULE_NAME}-Swift.h\"\nMODULE_MAP_PATH=\"${BUILT_PRODUCTS_DIR}/${PRODUCT_MODULE_NAME}.modulemap\"\n\nditto \"${DERIVED_SOURCES_DIR}/${PRODUCT_MODULE_NAME}-Swift.h\" \"${COMPATIBILITY_HEADER_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SwiftSocket/SwiftSocket.modulemap\" \"${MODULE_MAP_PATH}\"\nditto \"${PODS_ROOT}/Headers/Public/SwiftSocket/SwiftSocket-umbrella.h\" \"${BUILT_PRODUCTS_DIR}\"\nprintf \"\\n\\nmodule ${PRODUCT_MODULE_NAME}.Swift {\\n  header \\\"${COMPATIBILITY_HEADER_PATH}\\\"\\n  requires objc\\n}\\n\" >> \"${MODULE_MAP_PATH}\"\n";
 		};
-		99652FCBC8D3FDD8F6EA0DC26B0734B5 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		DD32C9FB2B323B4D765E41EC0FDDE952 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXResourcesBuildPhase section */
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		13487976253A0F787DA56797114477E5 /* Sources */ = {
+		77F2C36939F2629B13E653FB4F131B54 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				310F4A419C7777D411976A91A8977522 /* Result.swift in Sources */,
-				D303472E6599B444367CC153A4F2DFDC /* Socket.swift in Sources */,
-				590F90702C1E8FFBDE2750F2EB559F6B /* SwiftSocket-dummy.m in Sources */,
-				9F9C4D89B9E4648A85BA2AD7E2C4911F /* TCPClient.swift in Sources */,
-				86CABF16414D74E81AF00E487F59B6E7 /* UDPClient.swift in Sources */,
-				71719E654327DF3FE268F5B592C6221C /* ytcpsocket.c in Sources */,
-				26933DE790AD32659A054D491A443F2F /* yudpsocket.c in Sources */,
+				93EB7F1460A61D1FFC23840D954979E9 /* Result.swift in Sources */,
+				B0823A7B41A27849E0205C24F1184739 /* Socket.swift in Sources */,
+				EA0290A4F52C8316520D1C4EB2CF7BB0 /* SwiftSocket-dummy.m in Sources */,
+				BE612CF06F5899AF0E7E5D588651A397 /* TCPClient.swift in Sources */,
+				9E6C036157EC358D77CC29101A2DB40C /* UDPClient.swift in Sources */,
+				E34C0A86B013EBD0A07315E057978FE6 /* ytcpsocket.c in Sources */,
+				17B389E1D14FFDCD7E4BCE150654169A /* yudpsocket.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		20BAD8AB15FADDEA2C0E37F08D3F129D /* Sources */ = {
+		D0FA1E19905D907A22DD45FEA0F51564 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A0601673E64E46816B7364700E8A330A /* Pods-VIO-VIOUITests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		6580CAA19B37C860FD0E456E2EAFFF8C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				1E8189CE0F88D6765326615034586C3A /* Pods-VIOTests-dummy.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		FD231539764D85650C62896C5B49A723 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				0D6854010074039A4F317422E25E22D7 /* Pods-VIO-dummy.m in Sources */,
+				F9109117848E4253F76BD2E082F24429 /* Pods-VIO-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		23D713489423D9B3FE6DF6F74DBBFDD1 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = "Pods-VIO";
-			target = E8A0DFB7FF2E748421B0DA4271A2E000 /* Pods-VIO */;
-			targetProxy = 927CD063BEB8CE4E9D994C7E31A6512D /* PBXContainerItemProxy */;
-		};
-		5E8F2EF7573148FD3CDBF0355CE04609 /* PBXTargetDependency */ = {
+		2ABD486F53F933023F3CA648D62CFDDE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = SwiftSocket;
 			target = 2098E99F31975F5C89523CC6EB58B9CC /* SwiftSocket */;
-			targetProxy = F1759635AD080E029D46F583017E53EC /* PBXContainerItemProxy */;
-		};
-		DB2FDBA769BFDC625CE88890D9ECC8F3 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = SwiftSocket;
-			target = 2098E99F31975F5C89523CC6EB58B9CC /* SwiftSocket */;
-			targetProxy = 5CF78EB8A59819B6A4CFA60A6B735899 /* PBXContainerItemProxy */;
+			targetProxy = B2B073701E83D122BBAC29CD97213286 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		089D7A94D3DD7BFEBD829E97C4984995 /* Debug */ = {
+		403CCB2B5D190321E444CB5BE24F96A8 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFF3D69A8BE2B76E97877C54D2242DE6 /* Pods-VIO.debug.xcconfig */;
+			baseConfigurationReference = 5F9C409D36418C1532FF5E0F206E46A2 /* Pods-VIO.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VIO/Pods-VIO-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				MACH_O_TYPE = staticlib;
 				MODULEMAP_FILE = "Target Support Files/Pods-VIO/Pods-VIO.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		155A015B7A640F06B7127E7A24854CA0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 383B70CD1875BEC3A64BF7C7C377377A /* SwiftSocket.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSocket/SwiftSocket-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSocket/SwiftSocket-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftSocket/SwiftSocket.modulemap";
-				PRODUCT_MODULE_NAME = SwiftSocket;
-				PRODUCT_NAME = SwiftSocket;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1A775F73E4DB420435B80E0BD2ADAEE0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E0B2A9889749A75D9641514D7C15D97 /* Pods-VIO.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VIO/Pods-VIO-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VIO/Pods-VIO.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
 		};
 		510B057D2E9F059C50D52DA5D90F3ACF /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -677,41 +386,6 @@
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Release;
-		};
-		68214CE65F0BCE189FCA258837427B04 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 383B70CD1875BEC3A64BF7C7C377377A /* SwiftSocket.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/SwiftSocket/SwiftSocket-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SwiftSocket/SwiftSocket-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/SwiftSocket/SwiftSocket.modulemap";
-				PRODUCT_MODULE_NAME = SwiftSocket;
-				PRODUCT_NAME = SwiftSocket;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 		804E13245C9FBBE6A340C555CA8B2B4C /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -777,172 +451,84 @@
 			};
 			name = Debug;
 		};
-		9194063F5EEF79C0F9760D700A1EB85D /* Debug */ = {
+		AA22349E95D652B2FB4A145268738DB5 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F16CB8DD513BDBAB13AB29C0192678F9 /* Pods-VIO-VIOUITests.debug.xcconfig */;
+			baseConfigurationReference = 9DBC7917B55A98027A1DF8133FB5C809 /* SwiftSocket.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VIO-VIOUITests/Pods-VIO-VIOUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VIO-VIOUITests/Pods-VIO-VIOUITests.modulemap";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSocket/SwiftSocket-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SwiftSocket/SwiftSocket.modulemap;
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SwiftSocket;
+				PRODUCT_NAME = SwiftSocket;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
 		};
-		92F2AF7164FE5EC45D73CEE19D0567E5 /* Release */ = {
+		B336869FDD52F725EFBC63FA0AC3F66D /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 072C63B37791061D1757E3108BF6249D /* Pods-VIO-VIOUITests.release.xcconfig */;
+			baseConfigurationReference = 9DBC7917B55A98027A1DF8133FB5C809 /* SwiftSocket.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VIO-VIOUITests/Pods-VIO-VIOUITests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftSocket/SwiftSocket-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MODULEMAP_FILE = Headers/Public/SwiftSocket/SwiftSocket.modulemap;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_MODULE_NAME = SwiftSocket;
+				PRODUCT_NAME = SwiftSocket;
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EFA05CCFC23B0F0FCDEAD64328DEC2F8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5B1609F4B5F4A70A686A80F76B1DF09C /* Pods-VIO.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
 				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VIO-VIOUITests/Pods-VIO-VIOUITests.modulemap";
+				MODULEMAP_FILE = "Target Support Files/Pods-VIO/Pods-VIO.modulemap";
 				OTHER_LDFLAGS = "";
 				OTHER_LIBTOOLFLAGS = "";
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
-		};
-		CCBB3EF625DD8FAB287168D032649309 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CBC39396AD26F75DFB061BD59A326308 /* Pods-VIOTests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VIOTests/Pods-VIOTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VIOTests/Pods-VIOTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		F59A47C5EF8C0BCBB649CCD40EAEF474 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = AE520BE27AD546D0AA1034640185F7F7 /* Pods-VIOTests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Target Support Files/Pods-VIOTests/Pods-VIOTests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-VIOTests/Pods-VIOTests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		227044261F7ABB997524D6854C4DA01A /* Build configuration list for PBXNativeTarget "SwiftSocket" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				68214CE65F0BCE189FCA258837427B04 /* Debug */,
-				155A015B7A640F06B7127E7A24854CA0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -952,29 +538,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A65CEEE4C46D5FEB6CCCE72A6D863351 /* Build configuration list for PBXNativeTarget "Pods-VIO" */ = {
+		75D62BE3B0DB0ABDB76141EA800DCB75 /* Build configuration list for PBXNativeTarget "SwiftSocket" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				089D7A94D3DD7BFEBD829E97C4984995 /* Debug */,
-				1A775F73E4DB420435B80E0BD2ADAEE0 /* Release */,
+				AA22349E95D652B2FB4A145268738DB5 /* Debug */,
+				B336869FDD52F725EFBC63FA0AC3F66D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		B6C7524E9410D090F8240F66D3B9CD3F /* Build configuration list for PBXNativeTarget "Pods-VIO-VIOUITests" */ = {
+		ED0952365CBCFEC16A6812D89CE96425 /* Build configuration list for PBXNativeTarget "Pods-VIO" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				9194063F5EEF79C0F9760D700A1EB85D /* Debug */,
-				92F2AF7164FE5EC45D73CEE19D0567E5 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		DB96F47D5CC9181B1AEE6F95111B4277 /* Build configuration list for PBXNativeTarget "Pods-VIOTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				F59A47C5EF8C0BCBB649CCD40EAEF474 /* Debug */,
-				CCBB3EF625DD8FAB287168D032649309 /* Release */,
+				403CCB2B5D190321E444CB5BE24F96A8 /* Debug */,
+				EFA05CCFC23B0F0FCDEAD64328DEC2F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

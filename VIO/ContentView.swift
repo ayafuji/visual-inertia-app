@@ -22,13 +22,6 @@ struct ContentView : View {
             ARViewContainer().edgesIgnoringSafeArea(.all).environmentObject(self.poller)
 
             VStack {
-//                ZStack {
-//                    Rectangle().foregroundColor(Color.black)
-//                    Text(self.poller.time)
-//                        .font(Font.custom("SFProText-Bold", size: 24))
-//                        .foregroundColor(Color.white)
-//                }.frame(height: 30)
-                
                 ZStack {
                     if !self.poller.is_connected {
                         Rectangle().foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0))
@@ -51,7 +44,7 @@ struct ContentView : View {
                                     .first?.windows
                                     .filter({$0.isKeyWindow}).first
                             keyWindow?.endEditing(true)
-                            
+            
                         }) {
                             Text("Set IP").foregroundColor(.white)
                         }
@@ -73,10 +66,14 @@ struct ContentView : View {
                     //VIOButton(key: PRINT_KEY, background: Color(red: 0.0, green: 1.0, blue: 1.0, opacity: 0.5));
                     VIOButton(key: MERGE_KEY, background: Color(red: 1.0, green: 0.0, blue: 1.0, opacity: 0.5));
                 }
+                Slider(value: self.$poller.volume, in: 0...100, step: 1).padding()
+                
                 HStack {
-                    VIOButton(key: UP_KEY, background: Color(red: 0.0, green: 0.0, blue: 0.0, opacity: 0.5));
-                    VIOButton(key: DOWN_KEY, background: Color(red: 0.5, green: 0.5, blue: 1.5, opacity: 0.5));
-                }.frame(height:80)
+                    Text("1m / " + String(self.poller.ratio) + "pixels")
+                        .font(.headline)
+                        .foregroundColor(Color.white).padding()
+                    Slider(value: self.$poller.ratio, in: 100...500, step: 1)
+                }.padding()
             }
         }
     }

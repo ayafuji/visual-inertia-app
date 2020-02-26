@@ -1,4 +1,4 @@
-framework module Pods_VIO {
+module Pods_VIO {
   umbrella header "Pods-VIO-umbrella.h"
 
   export *

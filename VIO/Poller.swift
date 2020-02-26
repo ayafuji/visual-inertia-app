@@ -15,14 +15,14 @@ import ARKit
 let DEFAULT_PORT: UInt16 = 32900
 let DEFAULT_PORT_32: Int32 = 32900
 //let DEFAULT_HOST: String = "192.168.43.128"
-let DEFAULT_HOST: String = "192.168.43.128"
+let DEFAULT_HOST: String = "172.20.10.3"
 
 let CLICK_KEY = "click"
 let PRINT_KEY = "print"
 let MERGE_KEY = "merge"
 let ERASER_KEY = "eraser"
-let UP_KEY = "up"
-let DOWN_KEY   = "down"
+let UP_KEY = "start"
+let DOWN_KEY   = "stop"
 
 let COLOR_ALERT = Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 0.8)
 let COLOR_WARN = Color(red: 0.0, green: 1.0, blue: 1.0, opacity: 0.8)
@@ -47,11 +47,14 @@ final class Poller: NSObject, ObservableObject, ARSessionDelegate {
     var requested_ip: String = DEFAULT_HOST
     var status: Dictionary = [String: Bool]()
     var isTracked = false;
+    var volume: Double = 0
+    
     
     @Published var is_connected: Bool = true
     @Published var tracking_state_str: String = "";
     @Published var tracking_state_color: Color = Color(red: 0.0, green: 1.0, blue: 0.0, opacity: 0.5)
     @Published var time: String = "00:00"
+    @Published var ratio: Double = 500
     
     override init() {
         super.init()
@@ -85,32 +88,14 @@ final class Poller: NSObject, ObservableObject, ARSessionDelegate {
             }
         }
         self.connection?.start(queue: .main)
-        
-        UpdateTime()
     }
     
     public func setARView(arview: ARView) {
         self.arView = arview
+        
+        // If the following line fails to compile "Value of type 'ARView' has no member 'session'"
+        // You need to select a Real Device or Generic iOS Device and not a simulator
         self.arView.session.delegate = self
-    }
-    
-    public func UpdateTime() {
-        DispatchQueue.global().async {
-
-            while true {
-                let date = Date()
-                let calendar = Calendar.current
-                let year = calendar.component(.year, from: date)
-                let month = calendar.component(.month, from: date)
-                let day = calendar.component(.day, from: date)
-                let hour = calendar.component(.hour, from: date)
-                let minute = calendar.component(.minute, from: date)
-                let second = calendar.component(.second, from: date)
-                self.time = String(hour) + ":" + String(minute) + ":" + String(second);
-
-                usleep(UInt32(1000.0) * 1000)
-            }
-        }
     }
 
     public func Poll() {
@@ -131,8 +116,8 @@ final class Poller: NSObject, ObservableObject, ARSessionDelegate {
                 let printed: String = self.status[PRINT_KEY]! ? "1" : "0"
                 let merge: String = self.status[MERGE_KEY]! ? "1" : "0"
                 let eraser: String = self.status[ERASER_KEY]! ? "1" : "0"
-                let up: String = self.status[UP_KEY]! ? "1" : "0"
-                let down: String = self.status[DOWN_KEY]! ? "1" : "0"
+                let volume: Int = Int(self.volume)
+                let ratio: Int = Int(self.ratio);
                 
                 let results = [
                     String(Date().timeIntervalSince1970*1000),
@@ -142,9 +127,8 @@ final class Poller: NSObject, ObservableObject, ARSessionDelegate {
                     eraser,
                     clicked,
                     merge,
-                    printed,
-                    up,
-                    down,
+                    String(ratio),
+                    String(volume),
                 ]
                 if self.is_connected && self.isTracked {
                     self.connection!.send(content: results.joined(separator: ",").data(using: String.Encoding.utf8), completion: NWConnection.SendCompletion.contentProcessed(({ (NWError) in
